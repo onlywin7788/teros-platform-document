@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<service>
+	   <port/>
+	</service>
+	<flow>
+		<node file="input-connector.xml" type="input-connector"/>
+		<node file="input-filter.xml" type="input-filter"/>
+		<node file="message-mapper.xml"/>
+		<node file="output-filter.xml" type="output-filter"/>
+		<node file="output-connector.xml" type="output-connector"/>
+	</flow>
+</config>

@@ -48,6 +48,6 @@ INSERT INTO `rep_dsm_flow_class_prop` (`CLASS_PROP_ID`, `PROP_NAME`, `DISPLAY_NA
 	(26, 'connection.topic', '토픽명', NULL, 4),
 	(27, 'message.contents.format', '메시지 포맷', NULL, 4);
 
-INSERT INTO `rep_appm_app_type` (`TYPE_CODE`, `DESCRIPTION`) VALUES
-	('API', 'API APPLICATION'),
-	('DATA', 'DATA APPLICATION');
+INSERT INTO `rep_appm_app_type` (`APP_TYPE_ID`, `DESCRIPTION`) VALUES
+	('1', 'API APPLICATION'),
+	('2', 'DATA APPLICATION');

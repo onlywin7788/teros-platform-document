@@ -16,10 +16,9 @@ INSERT INTO `rep_dsm_intf_component` (`COMPONENT_ID`, `COMPONENT_NAME`, `COMPONE
 	(6, 'SAP', 'com.ext.teros.message_connector.sap.Executor'),
 	(7, 'RESTFUL', 'com.ext.teros.message_connector.restful.Executor'),
 	(8, 'SOAP', 'com.ext.teros.message_connector.soap.Executor'),
-	(9, 'CUSTOM', 'com.ext.teros.message_connector.custom.Executor'),
-	(10, 'TRANSFORM', 'com.ext.teros.message_connector.transform.Executor'),
-	(11, 'ROUTER', 'com.ext.teros.message_connector.router.Executor');
-
+	(9, 'TRANSFORM', 'com.ext.teros.message_connector.transform.Executor'),
+	(10, 'FILE', 'com.ext.teros.message_connector.file.Executor'),
+	
 INSERT INTO `rep_dsm_intf_component_prop` (`PROP_ID`, `PROP_NAME`, `DISPLAY_NAME`, `DESCRIPTION`, `COMPONENT_ID`) VALUES
 	(1, 'connection.host', '호스트', NULL, 1),
 	(2, 'connection.port', '포트', NULL, 1),
@@ -40,13 +39,12 @@ INSERT INTO `rep_dsm_intf_component_prop` (`PROP_ID`, `PROP_NAME`, `DISPLAY_NAME
 	(18, 'connection.test', 'test6', NULL, 6),
 	(19, 'connection.test', 'test7', NULL, 7),
 	(20, 'connection.test', 'test8', NULL, 8),
-	(21, 'connection.test', 'test9', NULL, 9),
-	(22, 'connection.test', 'test10', NULL, 10),
-	(23, 'connection.test', 'test11', NULL, 11),
+	(22, 'connection.test', 'test10', NULL, 9),
 	(24, 'connection.host', '호스트', NULL, 4),
 	(25, 'connection.port', '포트', NULL, 4),
 	(26, 'connection.topic', '토픽명', NULL, 4),
-	(27, 'message.contents.format', '메시지 포맷', NULL, 4);
+	(27, 'message.contents.format', '메시지 포맷', NULL, 4),
+	(28, 'file.path', '파일 경로', NULL, 10);
 
 INSERT INTO `rep_appm_app_type` (`APP_TYPE_ID`, `DESCRIPTION`) VALUES
 	('1', 'API APPLICATION'),

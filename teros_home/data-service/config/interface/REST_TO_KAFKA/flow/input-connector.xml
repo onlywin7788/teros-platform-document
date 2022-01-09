@@ -2,8 +2,12 @@
 <node name="message-input">
   <properties>
 	<param name="component.path" value="com.teros.data_connector.file.Executor"/>
+	<param name="file.read.path" value="e:\readfile\file.txt"/>
+	<param name="file.read.rename" value="e:\readfile\rename\file.txt"/>
+	<param name="file.read.timeout" value="3000"/>
+	<param name="message.format" value="json"/>
   </properties>
-  <message type="json" >
+  <message type="xml" >
     <field name="id"/>
     <field name="name"/>
     <field name="age"/>

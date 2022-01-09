@@ -2,9 +2,9 @@
 <node name="message-output">
   <properties>
 	<param name="component.path" value="com.teros.data_connector.kafka.Executor"/>
-	<param name="connection.host" value="10.10.2.102"/>
+	<param name="connection.host" value="10.10.2.151"/>
 	<param name="connection.port" value="9092"/>
-	<param name="connection.topic" value="test-topic-001"/>
+	<param name="connection.topic" value="test"/>
   </properties>
   <message type="json" >
     <field name="id"/>

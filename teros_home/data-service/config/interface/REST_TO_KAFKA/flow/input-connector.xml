@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <node name="message-input">
   <properties>
-	<param name="component.path" value="com.ext.teros.message_connector.rest.Executor"/>
+	<param name="component.path" value="com.teros.data_connector.file.Executor"/>
   </properties>
   <message type="json" >
     <field name="id"/>

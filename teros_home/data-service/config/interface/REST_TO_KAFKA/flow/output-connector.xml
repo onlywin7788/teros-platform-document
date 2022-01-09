@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node type="output">
+  <properties>
+	<param key="component.path" value="com.ext.teros.message_connector.kafka.Executor"/>
+	<param key="connection.host" value="10.10.2.102"/>
+	<param key="connection.port" value="9092"/>
+	<param key="connection.topic" value="test-topic-001"/>
+	<param key="message.contents-format" value="json"/>
+  </properties>
+</node>

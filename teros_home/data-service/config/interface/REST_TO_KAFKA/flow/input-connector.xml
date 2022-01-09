@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node type="input">
+  <properties>
+    <param key="import.path" value="com.ext.teros.message_connector.rest.Executor"/>
+    <param key="message.contents-format" value="xml"/>
+  </properties>
+</node>

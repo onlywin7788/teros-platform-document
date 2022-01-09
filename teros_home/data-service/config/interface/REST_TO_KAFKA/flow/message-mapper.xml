@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node type="mapper">
+  <properties>
+  <param key="message-set.name" value="common-message-set"/>
+  </properties>
+</node>

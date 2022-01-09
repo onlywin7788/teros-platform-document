@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><config>
+<properties>
+<param key="flow.name" value=""/>
+<param key="flow.service.mode" value="online"/>
+<param key="flow.service.port" value="38088"/>
+</properties>
+<flow>
+<definition>
+<node class="MARIADB" id="MARIADB-01" input="" number="1" output="2"/>
+<node class="ORACLE" id="ORACLE-02" input="1" number="2" output=""/>
+</definition>
+<setting>
+<node id="MARIADB-01">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="ORACLE-02">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+</setting>
+</flow>
+</config>

@@ -1,0 +1,21 @@
+{
+  "id": "my-api@1.0.0",
+  "predicates": [
+    {
+      "args": {
+        "_genkey_0": "/my-api/1.0.0/kafka"
+      },
+      "name": "Path"
+    },
+    {
+      "args": {
+        "type": "GET"
+      },
+      "name": "Method"
+    }
+  ],
+  "filters": [
+    "RewritePath\u003d/my-api/1.0.0/kafka,/kafka"
+  ],
+  "uri": "http://127.0.0.1:8080"
+}

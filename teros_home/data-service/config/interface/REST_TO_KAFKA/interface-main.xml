@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<properties>
+		<param key="interface.name" value="REST_TO_KAFKA"/>
+		<param key="interface.mode" value="online"/>
+		<param key="service.port" value="39091"/>
+	</properties>
+	<flow>
+		<node type="input" file_name="input-connector.xml" message_set="common-message-set.xml" />
+		<node type="filter" file_name="input-filter.xml"/>
+		<node type="mapper" file_name="message-mapper.xml"/>
+		<node type="filter" file_name="output-filter.xml"/>
+		<node type="output" file_name="output-connector.xml"/>
+	</flow>
+</config>

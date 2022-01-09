@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><config>
+<properties>
+<param key="flow.name" value=""/>
+<param key="flow.service.mode" value="online"/>
+<param key="flow.service.port" value="38088"/>
+</properties>
+<flow>
+<definition>
+<node class="KAFKA" id="KAFKA-02" input="" number="2" output="5"/>
+<node class="RESTFUL" id="RESTFUL-03" input="" number="3" output="4"/>
+<node class="CUSTOM" id="CUSTOM-04" input="3" number="4" output="6"/>
+<node class="CUSTOM" id="CUSTOM-05" input="2" number="5" output="6"/>
+<node class="ROUTER" id="ROUTER-06" input="5" number="6" output="7,8,9"/>
+<node class="KAFKA" id="KAFKA-07" input="6" number="7" output=""/>
+<node class="RABBITMQ" id="RABBITMQ-08" input="6" number="8" output=""/>
+<node class="SOAP" id="SOAP-09" input="6" number="9" output=""/>
+</definition>
+<setting>
+<node id="KAFKA-02">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="RESTFUL-03">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="CUSTOM-04">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="CUSTOM-05">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="ROUTER-06">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="KAFKA-07">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="RABBITMQ-08">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+<node id="SOAP-09">
+<params>
+<param key="component.path" value="com.ext.teros.component.Executor"/>
+</params>
+</node>
+</setting>
+</flow>
+</config>

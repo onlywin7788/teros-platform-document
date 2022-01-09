@@ -1,0 +1,1 @@
+{"id":"Book-Store2@1.0.0","predicates":[{"args":{"_genkey_0":"/Book-Store2/1.0.0//kafka"},"name":"Path"},{"args":{"type":"GET"},"name":"Method"}],"filters":["RewritePath\u003d/Book-Store2/1.0.0/kafka,/kafka"],"uri":"http://10.10.10.10:48082"}

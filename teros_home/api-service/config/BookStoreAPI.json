@@ -1,0 +1,1 @@
+{"id":"BookStoreAPI@1.0.0","predicates":[{"args":{"_genkey_0":"/BookStoreAPI/1.0.0/book"},"name":"Path"},{"args":{"type":"GET"},"name":"Method"}],"filters":["RewritePath\u003d/BookStoreAPI/1.0.0/book,/book"],"uri":"http://localhost:9999"}

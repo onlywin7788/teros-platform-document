@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message name="common-message-set" root_path="/DATA/CONTENTS">
+    <table name="TEST_TABLE">
+        <record name="RECORD">
+            <field name="ID" type="string"/>
+            <field name="NAME" type="string"/>
+            <field name="AGE" type="string"/>
+        </record>
+    </table>
+</message>

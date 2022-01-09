@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<node type="mapper">
-  <properties>
-  <param key="message-set.name" value="common-message-set"/>
-  </properties>
+<node name="message-input">
+  <message>
+    <source>
+        <field source="id"/>
+        <field name="name"/>
+        <field name="age"/>
+    </source>
+    <target>
+        <field source="id"/>
+        <field name="member_name"/>
+        <field name="member_age"/>
+    </target>
+  </message>
 </node>

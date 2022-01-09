@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<node type="filter">
-  <properties>
-	<param key="component.path" value="com.ext.teros.message_filter.input.Executor"/>
-  </properties>
+<node name="message-output">
+  <message type="json" format="xml"/>
 </node>
